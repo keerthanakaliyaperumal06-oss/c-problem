@@ -2,17 +2,21 @@
 #include <stdio.h>
 
 int main() {
-    int n=5;
-    int i,j;
-    for(i=1;i<=n;i++) {
-        for(j=1;j<=i;j++) {
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=i;j++){
             printf("*");
+        }
+        for(int k=1;k<=5*i-1;k++){
+            printf(" ");
         }
         printf("\n");
     }
-    for(i=5-1;i>=1;i--) {
-        for(j=1;j<=i;j++) {
+    for(int i=1;i<=4;i++){
+        for(int j=1;j<=5-i;j++){
             printf("*");
+        }
+        for(int k=1;k<=4;k++){
+            printf(" ");
         }
         printf("\n");
     }
